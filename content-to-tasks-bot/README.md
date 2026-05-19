@@ -60,7 +60,28 @@ cp .env.example .env
 To fetch Instagram reels automatically, set `INSTAGRAM_BASIC_DISPLAY_TOKEN` in `.env`.  
 Without it, the bot will prompt you to paste the caption manually.
 
-## Usage
+## Telegram Bot
+
+### 5. Create a Telegram bot
+
+1. Open Telegram and message [@BotFather](https://t.me/BotFather)
+2. Send `/newbot` and follow the prompts to get your `TELEGRAM_BOT_TOKEN`
+3. Add it to `.env`
+
+### Running the Telegram bot
+
+```bash
+bot-telegram
+```
+
+Then open your bot in Telegram and send it any URL or text. The bot will:
+- Fetch the content automatically (or ask you to paste it for platforms it cannot scrape)
+- Analyze it with Claude
+- Create tasks in Notion and reply with a summary
+
+---
+
+## CLI Usage
 
 ```bash
 # Process a single URL

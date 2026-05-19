@@ -11,10 +11,12 @@ setup(
         "beautifulsoup4>=4.12.0",
         "python-dotenv>=1.0.0",
         "lxml>=5.0.0",
+        "python-telegram-bot>=20.7",
     ],
     entry_points={
         "console_scripts": [
             "bot=bot.cli:main",
+            "bot-telegram=bot.telegram_bot:main",
         ],
     },
     python_requires=">=3.10",
